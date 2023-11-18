@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en>
+	<head>
+		<title> Question 4 - Prsentation </title>
+		<meta charset="utf-8">
+		<method = "get">
+	</head>
+	<body>
+		<style> 
+			body {
+				background-color:#FCFFAD;
+			}
+			fieldset.lightblue {
+				margin-bottom:20px;
+				margin-top:20px;
+				background-color:#3391FF;
+				} 
+			fieldset.lightred {
+				margin-bottom:20px;
+				margin-top:20px;
+				background-color:#F84F3C;
+				}
+			legend.blue {
+				color:#1115A7;
+				font-weight:bold;
+				font-size:20px;
+				}
+			legend.red {
+				color:#851002;
+				font-weight:bold;
+				font-size:20px;
+				}
+			p.main {
+				font-weight:bold;
+			}
+			label {
+				font-weight:lighter;
+			}
+		</style>
+		<table>
+			<tr>
+				<th> <h1> Music Lover's Survey </h1> <th>
+				<th>
+					<!-- This image is taken from a website
+						Source: rawpixel.com
+						URL: https://www.rawpixel.com/image/6480090/image-background-public-domain-note -->
+					<a target="_blank" href = "https://www.rawpixel.com/image/6480090/image-background-public-domain-note">
+						<img src = "musicnotes.png"
+									width = "300" height = "100"
+									align = "CENTER" />
+					</a>
+				</th>
+			</tr>
+		</table>
+		
+		<form action = "Question 4 - Prsentation.html" method ="get">
+			<fieldset class ="lightblue"> 
+				<legend class ="blue"> Music Lover's Personal Information </legend>
+				<p class ="main"> First Name <input type = "text" name = "firstName" size = "20"/> </p>
+				<p class ="main"> Family Name <input type = "text" name = "familyName" size = "20"/> </p>
+				<p class ="main"> Gender: <label> <input type = "radio" name = "Gender" value ="Male" checked = "unchecked"/> Male </label>
+							<label>	<input type = "radio" name = "Gender" value ="Female" checked = "unchecked"/> Female</label>
+				</p>
+				<p class ="main">
+					What age category are you from?
+					<select name = "age">
+						<option> Less than 18 </option>
+						<option> 18 - 65 </option>
+						<option> 65+ </option>
+					</select>
+				</p>
+				<p class ="main"> Email <input type = "text" name = "email" size = "20"/> </p>
+			</fieldset>
+							
+			<fieldset class = "lightred">
+				<legend class ="red"> Survey Questions </legend>
+				<p class ="main">
+					Which type of music do you listen to? (Pick as many as apply) <br />
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Blues" /> Blues </label>
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Classical Music" /> Classical Music </label>
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Electronic Music" /> Electronic Music </lable> <br />
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Hip Hop/ Rap" /> Hip Hop/ Rap </label>
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Pop (Popular music)" /> Pop (Popular music) </label>
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Regae" /> Regae </label> <br />
+					<label> <input type = "checkbox" name = "music[]" 
+						value = "Other" /> Other </label>
+				</p>
+				<p class ="main"> List your 3 favorite artists/bands: <br />
+					<input type = "text" name = "artist/band1" size = "20"/> 
+					<input type = "text" name = "artist/band2" size = "20"/> 
+					<input type = "text" name = "artist/band2" size = "20"/> <br />
+				</p>
+				<p class ="main"> If you were to win tickets, which show would you like 2 tickets to? <br />
+					<label> <input type = "radio" name = "tickets" value = "britFloyd" checked = "unchecked" /> 
+						BRIT FLOYD (March 24, 2016)
+					</label>
+					<label> <input type = "radio" name = "tickets" value = "ironMaiden" checked = "unchecked" /> 
+						IRON MAIDEN (April 1, 2016)
+					</label>
+					<label> <input type = "radio" name = "tickets" value = "janetJackson" checked = "unchecked" /> 
+						JANET JACKSON (June 17, 2016)
+					</label>
+					<label> <input type = "radio" name = "tickets" value = "adele" checked = "unchecked" /> 
+						ADELE (September 30, 2016)
+					</label>
+				</p>
+			</fieldset>
+					
+			<p> Thank you for taking the time to fill out our survey! <br /> </p>
+			<input type = "submit" value = "Submit" />
+			<input type = "reset" value = "Reset" />
+		</form>
+	</body>
+</html>
