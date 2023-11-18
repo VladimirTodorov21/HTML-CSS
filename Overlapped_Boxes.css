@@ -1,0 +1,21 @@
+div#first {
+	padding:5px;
+	border:2px dotted green;
+	width:200px;
+	height:200px;
+	position: absolute;
+}
+
+span.red{
+	color:red; 
+	font-weight:bold
+}
+
+div#second {
+	padding:5px;
+	border:2px dotted orange;
+	width:200px;
+	height:200px;
+	position:absolute;
+	margin-top:160px;
+}
