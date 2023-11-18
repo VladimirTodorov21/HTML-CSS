@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title> Question 6: Pseudo Class Selector and Navigation Bar </title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<style>
+			list {
+				list-style-type:none;
+			}
+			li{
+				text-align:center-left;
+				padding:20px;
+				width:200px;
+				background-color: lightgrey;
+			}
+			li.Home {color: white; background-color: green;}
+			li:hover {color: white; background-color: black;}
+		</style>
+	
+		<div>
+			<p> <h2> Vertical Navigation Bar </h2> </p>
+			<p> "Home" is the current page. There are four menu items. </p>
+		</div>
+		<div>
+			<list>
+				<li class="Home"> Home </li>
+				
+				<li> News </li>
+		
+				<li> Contact </li> 
+		
+				<li> About </li> 
+			</list>
+		</div>
+	</body>
+<html>
